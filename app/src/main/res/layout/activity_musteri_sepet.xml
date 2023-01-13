@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/arkaplan"
+    tools:context=".MusteriSepet">
+
+    <EditText
+        android:id="@+id/PlnMusteriSepetToplamTutar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="9dp"
+        android:ems="10"
+        android:hint="Toplam Tutar"
+        android:inputType="textPersonName"
+        android:textColor="@color/teal_700"
+        android:textColorHint="@color/teal_700"
+        app:layout_constraintBottom_toTopOf="@+id/btnSepetOnay"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LstMusteriSepetCicekler" />
+
+    <Button
+        android:id="@+id/btnSepetOnay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="29dp"
+        android:layout_marginBottom="148dp"
+        android:onClick="SepetOnay"
+        android:text="Sepeti Onayla"
+        app:cornerRadius="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/PlnMusteriSepetToplamTutar"
+        app:layout_constraintTop_toBottomOf="@+id/PlnMusteriSepetToplamTutar" />
+
+    <ListView
+        android:id="@+id/LstMusteriSepetCicekler"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="1dp"
+        app:layout_constraintBottom_toTopOf="@+id/PlnMusteriSepetToplamTutar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

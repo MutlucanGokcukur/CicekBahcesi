@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">CicekBahcesi</string>
+    <string-array name="İlceler">
+        <item>İlçe</item>
+        <item>Adalar</item>
+        <item>Arnavutköy</item>
+        <item>Ataşehir</item>
+        <item>Avcılar</item>
+        <item>Bağcılar</item>
+        <item>Bahçelievler</item>
+        <item>Bakırköy</item>
+        <item>Başakşehir</item>
+        <item>Bayrampaşa</item>
+        <item>Beşiktaş</item>
+        <item>Beykoz</item>
+        <item>Beylikdüzü</item>
+        <item>Beyoğlu</item>
+        <item>Büyükçekmece</item>
+        <item>Çatalca</item>
+        <item>Çekmeköy</item>
+        <item>Esenler</item>
+        <item>Esenyurt</item>
+        <item>Eyüpsultan</item>
+        <item>Fatih</item>
+        <item>Gaziosmanpaşa</item>
+        <item>Güngören</item>
+        <item>Kadıköy</item>
+        <item>Kağıthane</item>
+        <item>Kartal</item>
+        <item>Küçükçekmece</item>
+        <item>Maltepe</item>
+        <item>Pendik</item>
+        <item>Sancaktepe</item>
+        <item>Sarıyer</item>
+        <item>Silivri</item>
+        <item>Sultanbeyli</item>
+        <item>Sultangazi</item>
+        <item>Şile</item>
+        <item>Şişli</item>
+        <item>Tuzla</item>
+        <item>Ümraniye</item>
+        <item>Üsküdar </item>
+        <item>Zeytinburnu</item>
+    </string-array>
+</resources>

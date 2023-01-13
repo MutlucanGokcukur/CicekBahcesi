@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/musteribilgileri" android:title="Müşteri Bilgileri"></item>
+    <item android:id="@+id/gelensiparisler" android:title="Siparişler"></item>
+    <item android:id="@+id/cicekekle" android:title="Yeni Çiçek Ekle"></item>
+    <item android:id="@+id/signout" android:title="Çıkış Yap"></item>
+
+</menu>

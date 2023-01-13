@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/arkaplan"
+    tools:context=".CicekEkle">
+
+    <CheckBox
+        android:id="@+id/chcIcMekan"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="50dp"
+        android:text="İç Mekan"
+        android:textColor="@color/teal_700"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/txtCicekFiyat"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/chcDısMekan"
+        app:layout_constraintTop_toTopOf="@+id/txtCicekFiyat" />
+
+    <ImageView
+        android:id="@+id/CicekResim"
+        android:layout_width="281dp"
+        android:layout_height="259dp"
+        android:layout_marginTop="28dp"
+        android:onClick="ResimEkle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/bosresim" />
+
+    <EditText
+        android:id="@+id/txtCicekAdı"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="57dp"
+        android:ems="10"
+        android:hint="Çiçek Adı"
+        android:inputType="textPersonName"
+        android:textColor="@color/teal_700"
+        android:textColorHint="@color/teal_700"
+        app:layout_constraintEnd_toStartOf="@+id/txtCicekFiyat"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/CicekResim" />
+
+    <EditText
+        android:id="@+id/txtCicekÖzellik"
+        android:layout_width="385dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="108dp"
+        android:ems="10"
+        android:gravity="top|left"
+        android:hint="Çiçek Özellikleri"
+        android:inputType="textMultiLine|textPersonName"
+        android:textColor="@color/teal_700"
+        android:textColorHint="@color/teal_700"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.384"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/CicekResim" />
+
+    <CheckBox
+        android:id="@+id/chcDısMekan"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="50dp"
+        android:text="Dış Mekan"
+        android:textColor="@color/teal_700"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/txtCicekAdı"
+        app:layout_constraintTop_toTopOf="@+id/txtCicekAdı" />
+
+    <EditText
+        android:id="@+id/txtCicekFiyat"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="13dp"
+        android:ems="10"
+        android:hint="Çiçek Fiyat"
+        android:inputType="number"
+        android:textColor="@color/teal_700"
+        android:textColorHint="@color/teal_700"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txtCicekAdı"
+        app:layout_constraintTop_toBottomOf="@+id/CicekResim" />
+
+    <Button
+        android:id="@+id/btnCicekEkle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:onClick="Ekle"
+        android:text="Çiçek Ekle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtCicekÖzellik"
+        app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

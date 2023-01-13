@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/arkaplan"
+    tools:context=".MusteriBilgiler">
+
+    <EditText
+        android:id="@+id/PlnMusteriBilgilerAdres"
+        android:layout_width="380dp"
+        android:layout_height="130dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginBottom="72dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="Açık Adres"
+        android:inputType="textMultiLine"
+        android:textColor="@color/teal_700"
+        android:textColorHint="@color/teal_700"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/PlnLayout"
+        app:layout_constraintVertical_bias="0.0"
+        tools:layout_editor_absoluteX="18dp" />
+
+    <Button
+        android:id="@+id/btnMusteriBilgiGuncelle"
+        android:layout_width="175dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="20dp"
+        android:onClick="BilgileriGüncele"
+        android:shadowColor="@color/teal_700"
+        android:text="Güncelle"
+        android:textColor="@color/white"
+        android:textColorHighlight="@color/teal_700"
+        android:textColorHint="@color/teal_700"
+        android:textColorLink="@color/teal_700"
+        app:cornerRadius="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/PlnMusteriBilgilerAdres"
+        app:layout_constraintVertical_bias="0.913"
+        app:rippleColor="@color/teal_700"
+        app:strokeColor="@color/teal_700" />
+
+    <Button
+        android:id="@+id/btnKayıtSil"
+        android:layout_width="175dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginBottom="20dp"
+        android:onClick="KayıtSil"
+        android:text="Kaydımı Sil"
+        app:cornerRadius="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnGuncellemeAc"
+        android:layout_width="175dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="20dp"
+        android:onClick="GuncellemeAc"
+        android:text="Güncellemeyi Aç"
+        app:cornerRadius="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/PlnMusteriBilgilerAdres"
+        app:layout_constraintVertical_bias="0.956" />
+
+    <LinearLayout
+        android:id="@+id/PlnLayout"
+        android:layout_width="380dp"
+        android:layout_height="345dp"
+        android:layout_marginBottom="200dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <EditText
+            android:id="@+id/PlnTextMusteriBilgilerAdı"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Ad Soyad"
+            android:inputType="textPersonName"
+            android:textColor="@color/teal_700"
+            android:textColorHint="@color/teal_700" />
+
+        <EditText
+            android:id="@+id/PlnTextMusteriBilgilerTelefonNo"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:ems="10"
+            android:hint="Telefon Numarası"
+            android:inputType="textPersonName"
+            android:textColor="@color/teal_700"
+            android:textColorHint="@color/teal_700" />
+
+        <EditText
+            android:id="@+id/PlnTextMusteriBilgilerEmailAdres"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:ems="10"
+            android:hint="E-Mail Adres"
+            android:inputType="textPersonName"
+            android:textColor="@color/teal_700"
+            android:textColorHint="@color/teal_700" />
+
+        <EditText
+            android:id="@+id/PlnTextMusteriBilgilerSifre"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:ems="10"
+            android:hint="En Az 6 Haneli Şifre"
+            android:inputType="textPersonName"
+            android:textColor="@color/teal_700"
+            android:textColorHint="@color/teal_700" />
+
+        <Spinner
+            android:id="@+id/PlnMusteriBilgilerIlce"
+            android:layout_width="match_parent"
+            android:layout_height="50dp" />
+
+        <TextView
+            android:id="@+id/TextMusteriBilgilerIlce"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Ilce"
+            android:textColor="@color/teal_700"
+            android:textSize="24sp" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

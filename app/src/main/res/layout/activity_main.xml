@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/arkaplan"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btnKonum"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginEnd="246dp"
+        android:layout_marginBottom="25dp"
+        android:background="@drawable/map"
+        android:foreground="@drawable/map"
+        android:onClick="btnKonum"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnInstagram"
+        app:layout_constraintTop_toBottomOf="@+id/txtHesapOlustur"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/btnInstagram"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginEnd="9dp"
+        android:layout_marginBottom="27dp"
+        android:background="@drawable/instagram"
+        android:foreground="@drawable/instagram"
+        android:onClick="btnInsta"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnKonum"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtHesapOlustur"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/txtSifreUnuttu"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:autoText="false"
+        android:clickable="true"
+        android:gravity="center"
+        android:onClick="btnSifreUnuttu"
+        android:text="Şifremi Unuttum"
+        android:textColor="@color/design_default_color_secondary_variant"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/txtHesapOlustur"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnGiris" />
+
+    <TextView
+        android:id="@+id/txtHesapOlustur"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:autoText="false"
+        android:clickable="true"
+        android:gravity="center"
+        android:onClick="btnHesapOlusturma"
+        android:text="Hesap Oluştur"
+        android:textColor="@color/design_default_color_secondary_variant"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtSifreUnuttu" />
+
+    <Button
+        android:id="@+id/btnGiris"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:onClick="btnGiris"
+        android:text="Giriş Yap"
+        android:textSize="16sp"
+        app:cornerRadius="50dp"
+        app:layout_constraintBottom_toTopOf="@+id/txtSifreUnuttu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtSifre" />
+
+    <EditText
+        android:id="@+id/txtSifre"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="189dp"
+        android:layout_marginBottom="6dp"
+        android:ems="10"
+        android:hint="Şifre"
+        android:inputType="textPersonName|textPassword"
+        android:textColor="@color/teal_700"
+        android:textColorHint="@color/teal_700"
+        app:layout_constraintBottom_toTopOf="@+id/btnGiris"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/txtEmailAdres"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="141dp"
+        android:ems="10"
+        android:hint="E-Mail Adres"
+        android:inputType="textPersonName"
+        android:textColor="@color/teal_700"
+        android:textColorHint="@color/teal_700"
+        app:layout_constraintBottom_toTopOf="@+id/txtSifre"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

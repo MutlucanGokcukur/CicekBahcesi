@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/arkaplan"
+    tools:context=".AdminCicekBilgiler">
+
+    <EditText
+        android:id="@+id/PlnAdminCicekBilgilerCicekAdı"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="18dp"
+        android:ems="10"
+        android:hint="Çiçek Adı"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/PlnAdminCicekBilgilerCicekFıyat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="14dp"
+        android:ems="10"
+        android:hint="Çiçek Fiyat"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/PlnAdminCicekBilgilerCicekAdı" />
+
+    <CheckBox
+        android:id="@+id/ChcAdminCicekBilgilerDışMekan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="194dp"
+        android:text="Dış Mekan"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <CheckBox
+        android:id="@+id/ChcAdminCicekBilgilerIcMekan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="61dp"
+        android:layout_marginBottom="35dp"
+        android:text="İç Mekan"
+        app:layout_constraintBottom_toTopOf="@+id/btnAdminCicekBilgiGuncelle"
+        app:layout_constraintStart_toEndOf="@+id/ChcAdminCicekBilgilerDışMekan" />
+
+    <Button
+        android:id="@+id/btnAdminCicekBilgiGuncelle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="25dp"
+        android:onClick="BilgileriGuncelle"
+        android:text="Güncelle"
+        app:layout_constraintEnd_toEndOf="@+id/ChcAdminCicekBilgilerIcMekan"
+        app:layout_constraintTop_toBottomOf="@+id/ChcAdminCicekBilgilerDışMekan" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/arkaplan"
+    tools:context=".MusteriListesi">
+
+    <LinearLayout
+        android:id="@+id/MusteriBilgilerLayout"
+        android:layout_width="397dp"
+        android:layout_height="330dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="21dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/btnKullanıcıSil"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
+
+        <EditText
+            android:id="@+id/PlnMusteriListesiAd"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:ems="10"
+            android:hint="Ad Soyad"
+            android:inputType="textPersonName"
+            android:textColor="@color/teal_700"
+            android:textColorHint="@color/teal_700" />
+
+        <EditText
+            android:id="@+id/PlnMusteriListesiTelefonNumara"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:ems="10"
+            android:hint="Telefon Numarası"
+            android:inputType="phone"
+            android:textColor="@color/teal_700"
+            android:textColorHint="@color/teal_700" />
+
+        <EditText
+            android:id="@+id/PlnMusteriListesiEmailAdres"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:ems="10"
+            android:hint="E-Mail Adres"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/teal_700"
+            android:textColorHint="@color/teal_700" />
+
+        <TextView
+            android:id="@+id/PlnMusteriListesiIlce"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="İlçe"
+            android:textColor="@color/teal_700"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/PlnMusteriListesiAdres"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:inputType="textMultiLine"
+            android:text="Adres"
+            android:textColor="@color/teal_700"
+            android:textColorHint="@color/teal_700"
+            android:textSize="24sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="388dp"
+        android:layout_height="159dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/MusteriBilgilerLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:context=".MainActivity">
+
+        <ListView
+            android:id="@+id/LstMüsteriListesiMusteriListesi"
+            android:layout_width="match_parent"
+            android:layout_height="159dp"
+            android:cacheColorHint="@color/teal_700"
+            android:drawSelectorOnTop="true"></ListView>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnKullanıcıSil"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="128dp"
+        android:layout_marginBottom="25dp"
+        android:onClick="KullanıcıSil"
+        android:text="Kullanıcıyı Sil"
+        app:cornerRadius="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/MusteriBilgilerLayout" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
